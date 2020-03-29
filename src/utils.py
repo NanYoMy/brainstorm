@@ -174,7 +174,7 @@ def make_output_dirs(experiment_base_name: str,
     else:
         # create each directory
         if not os.path.isdir(target_exp_dir):
-            os.mkdir(target_exp_dir)
+            os.makedirs(target_exp_dir)
 
     # make subdirectories if they do not exist already
     if not os.path.isdir(figures_dir):
